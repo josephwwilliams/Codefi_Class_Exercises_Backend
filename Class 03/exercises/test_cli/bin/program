@@ -1,0 +1,3 @@
+require './lib/test_cli.rb'
+
+CLI.new.run
