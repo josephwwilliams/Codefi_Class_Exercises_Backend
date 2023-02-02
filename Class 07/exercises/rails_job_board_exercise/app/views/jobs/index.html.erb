@@ -1,0 +1,10 @@
+<h1>
+  <% @job_posting.each_with_index do |job, idx| %>
+    Job Listing #<%= idx + 1 %>
+    <br>
+    <%= job[:company] %>:
+    <%= job[:position] %>,
+    (<%= job[:location] %>)
+    <hr>
+  <% end %>
+</h1>
