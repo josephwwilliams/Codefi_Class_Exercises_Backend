@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jobs App</title>
+    <link rel="stylesheet" type="text/css" href="./jobs.css" />
+  </head>
+  <body>
+    <h1>Jobs</h1>
+
+    <form id="new-job-form">
+      <label for="job-type">Job Type:</label>
+      <input type="text" id="job-type" name="job_type" /><br />
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea><br />
+
+      <label for="qualifications">Qualifications:</label>
+      <textarea id="qualifications" name="qualifications"></textarea><br />
+
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company" /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <table id="jobs-table">
+      <thead>
+        <tr>
+          <th>Job Type</th>
+          <th>Description</th>
+          <th>Qualifications</th>
+          <th>Company</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="./jobs.js"></script>
+  </body>
+</html>
